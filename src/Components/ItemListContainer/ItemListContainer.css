@@ -1,0 +1,11 @@
+.contenedor {
+  background-color: gray;
+  display: flex;
+  height: 160px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.548);
+}
