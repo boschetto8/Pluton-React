@@ -5,13 +5,13 @@ import CartWidget from '../CartWidget/CartWidget'
 
 
 
+
 function NavBar() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
                     
-                    <br/>
                         <Navbar.Brand href="#home">Escape a Plutón <CartWidget/></Navbar.Brand>
                             <Nav className="me-auto">
                             <Nav.Link href="#home">Inicio</Nav.Link>
