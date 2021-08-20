@@ -1,0 +1,14 @@
+.cardView {
+  display: inline-flex;
+  width: 40%;
+  margin: 5px;
+  flex-direction: row;
+  padding: 2px;
+  flex-grow: 0;
+  align-items: flex-start;
+  list-style: none;
+}
+
+h5 {
+  color: black;
+}
