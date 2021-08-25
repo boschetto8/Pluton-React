@@ -1,6 +1,5 @@
 .itemList-container {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  align-items: center;
 }

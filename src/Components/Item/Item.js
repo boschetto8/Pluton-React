@@ -18,7 +18,7 @@ const Item = ({libro}) => {
                   </Card.Content>
                      <Card.Content extra><h5>${libro.precio}</h5></Card.Content>
                      <h5><ItemCount stockLibro={libro.stock}/></h5>
-                     <Button primary>Comprar</Button>
+                     <Button >Comprar</Button>
             </Card>
             
       </div>

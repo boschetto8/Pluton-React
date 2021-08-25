@@ -1,0 +1,15 @@
+.contenedor {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+.bienvenido {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.548);
+}

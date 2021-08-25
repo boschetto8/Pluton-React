@@ -1,16 +1,30 @@
 import './App.css';
 import NavBar from './Components/NavBar/NavBar.js';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Header from './Components/Header/Header';
 
+//Views
+import Home from './Views/Home/Home';
+import Contact from './Views/Contact/Contact';
+import About from './Views/About/About';
+import BookDetail from './Views/BookDetail/BookDetail';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <NavBar prop/>
-        <ItemListContainer welcome='¡Bienvenido a nuestra página de lectura!'/>
+      <Router>
+          <div className="App">
+              <NavBar prop/>
+              <Header welcome='¡Bienvenido a nuestra página de lectura!'/>
+            <Switch>  
+                <Route path='/' exact component={Home} />
+                <Route path='/contact' component={Contact}/>
+                <Route path='/about' component={About} />
+                <Route path='/detail/:id' component={BookDetail} /> 
+             </Switch>
               
-     </div>
+            
+          </div>
+     </Router>
   );
 }
 

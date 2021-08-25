@@ -4,6 +4,7 @@
             "autor":"jose mauro de vasconcelos", 
             "precio": 1200, 
             "stock": 14,
+            "categoria": "ficcion",
             "descripcion":"Este libro describe como un niño a través de sus experiencias va asumiendo las consecuencias de su vida",
             "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/029/689/products/naranja-lima1-e53d051f21d1a2af0416002664688088-640-0.png"
         },
@@ -12,6 +13,7 @@
             "autor":"Antoine de Saint-Exupéry", 
             "precio": 980, 
             "stock":  7,
+            "categoria": "ficcion",
             "descripcion":"El principito trata de la historia de un pequeño príncipe que parte de su asteroide a una travesía por el universo, en la cual descubre la extraña forma en que los adultos ven la vida y comprende el valor del amor y la amistad.",
             "imagen": "https://imagessl4.casadellibro.com/a/l/t7/94/9788478887194.jpg"
         },
@@ -20,6 +22,7 @@
             "autor":"Fiodor Dotoievski", 
             "precio": 1360,
             "stock":  4, 
+            "categoria": "existencialista",
             "descripcion":"Los hermanos Karamazov es una novela filosófica y psicológica ambientada en la Rusia del siglo XIX, que entra profundamente en los debates éticos de Dios, el libre albedrío y la moralidad.",
             "imagen": "https://images-na.ssl-images-amazon.com/images/I/51bMDQ4iVsL._SX342_SY445_QL70_ML2_.jpg"
         },
@@ -28,6 +31,7 @@
             "autor":"Roberto Bolaño", 
             "precio": 2300,
             "stock":  2, 
+            "categoria": "drama",
             "descripcion":"Es la historia de cinco profesores universitarios críticos de la obra del desconocido y misterioso escritor alemán Benno Von Archimboldi, del que no sabe nada ni su editor, solo que es un hombre muy alto. ... En esta búsqueda entran historias y personajes que los llevan a México, a Santa Teresa, a buscar al escritor",
             "imagen": "https://1.bp.blogspot.com/-0RFs6WeNku4/V7zRiNRbzxI/AAAAAAAAAo0/WIxB2tvwHmEThgk1vqS968oW6B84IiyAACLcB/s1600/2666.jpg"
         },
@@ -36,6 +40,7 @@
             "autor":"Adolfo Bioy Casares", 
             "precio": 750,
             "stock": 120, 
+            "categoria": "ficcion",
             "descripcion":"El escritor argentino Adolfo Bioy Casares, se plantea el tema del eterno regreso y se despliega una discusión sobre la percepción del hombre, al ubicarse en el mundo del que forma parte.",
             "imagen": "https://www.planetadelibros.com/usuaris/libros/fotos/49/m_libros/portada_la-invencion-de-morel_adolfo-bioy-casares_201505261221.jpg"
         },
@@ -44,6 +49,7 @@
             "autor":"Federico Garcia Lorca", 
             "precio": 1250,
             "stock":  5, 
+            "categoria": "teatro",
             "descripcion":"El tema principal tratado en este gran drama es la vida y la muerte. ... Es constante en la obra lorquiana la obsesión por el puñal, el cuchillo y la navaja, que en Bodas de sangre atraen la fascinación y, a la vez, presagian la muerte.",
             "imagen": "https://i.pinimg.com/originals/c7/53/17/c75317368a827d4e85bd5f36b0228d77.jpg"
         }

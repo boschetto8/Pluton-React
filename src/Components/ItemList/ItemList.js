@@ -1,17 +1,18 @@
 import {useState, useEffect} from "react";
 import Item from "../Item/Item";
 import './ItemList.css'
+import {Link} from 'react-router-dom'
 
 
 const ItemList = () => {
 
-    const [book, setBook] = useState([]);
+    const [books, setBooks] = useState([]);
    
 
     useEffect(() => {
-        fetch('/libros.json')
+        fetch('http://localhost:3000/libros.json')
         .then((response) => response.json())
-        .then((data) => setBook(data));
+        .then((data) => setBooks(data));
         
         }, []); 
 
@@ -19,11 +20,12 @@ const ItemList = () => {
     return (
         <div>
           
-            {book.map((libros) => {
+            {books.map((libros) => {
          return (
             <div className='itemList-container' key={libros.id}>
-                <Item libro={libros} />
-                
+                <Link to= {`/detail/${libros.id}`}>
+                     <Item libro={libros} />
+                </Link>
             </div>
           )
                     }

@@ -1,0 +1,7 @@
+.contacto {
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
