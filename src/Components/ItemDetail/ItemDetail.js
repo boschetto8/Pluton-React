@@ -1,30 +1,27 @@
-import {useState, useEffect} from 'react'
-import BookDetail from '../../Views/BookDetail/BookDetail';
+import {Card, Image} from 'semantic-ui-react'
+import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
+import {Button} from 'react-bootstrap'
 
-const ItemDetail = ({match}) => {
-    const bookID = match.params.id
-    const [libro, setLibro] = useState([]);
-    console.log(libro)
-    useEffect(() => {
-        fetch(`http://localhost:3000/libros.json/${bookID}`)
-        .then((response) => response.json())
-        .then((data) => setLibro(data));       
-         }, [bookID]);
-       
-    return (    
-        <div classname='itemDetail'>
-            {libro.map((book) => {
-                return(
-                    <div key={book.id}>
-                        <BookDetail prop ={book}/>
-                     </div>
-                )
-            })}
 
+const ItemDetail = ({data}) => {
+    return(        
+                <Card >
+                        <Image src={data.imagen} wrapped ui={false} />
+                         <Card.Content>
+                                <Card.Header><h3>Nombre del libro:{data.nombre}</h3></Card.Header>
+                                <Card.Meta>
+                                <h4> Autor : {data.autor}</h4>
+                                </Card.Meta>
+                                 <Card.Description><h4>Descripción: {data.descripcion}</h4></Card.Description>
+                        </Card.Content>
+                        <ItemCount stockLibro={data.stock}/>
+                         <Card.Content extra><h5>${data.precio}</h5></Card.Content>
+                        <Button >Comprar</Button>
+                </Card>
+        
+    ) 
+            }
             
-        </div>
-        )
-       
-}
 
 export default ItemDetail

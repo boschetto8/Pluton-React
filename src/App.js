@@ -7,7 +7,8 @@ import Header from './Components/Header/Header';
 import Home from './Views/Home/Home';
 import Contact from './Views/Contact/Contact';
 import About from './Views/About/About';
-import BookDetail from './Views/BookDetail/BookDetail';
+import ItemDetailContainer from './Views/ItemDetailContainer/ItemDetailContainer';
+import Category from './Views/Category/Category';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
                 <Route path='/' exact component={Home} />
                 <Route path='/contact' component={Contact}/>
                 <Route path='/about' component={About} />
-                <Route path='/detail/:id' component={BookDetail} /> 
+                <Route path='/detail/:id' component={ItemDetailContainer} /> 
+                <Route path='/category/:id' component={Category} />
              </Switch>
               
             
