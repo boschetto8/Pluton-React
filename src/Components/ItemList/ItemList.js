@@ -1,16 +1,14 @@
-import {useState, useEffect} from "react";
-import Item from "../Item/Item";
+import  {useState, useEffect} from 'react'
 import './ItemList.css'
-import {Link} from 'react-router-dom'
-
+import  Item from '../Item/Item'
+import { NavLink } from 'react-router-dom';
 
 const ItemList = () => {
-
     const [books, setBooks] = useState([]);
    
-
+    //Se esta utilizando json web server inicializar (npx json-server --watch .\public\libros.json -p 8000)
     useEffect(() => {
-        fetch('http://localhost:3000/libros.json')
+        fetch('http://localhost:8000/books')
         .then((response) => response.json())
         .then((data) => setBooks(data));
         
@@ -22,10 +20,10 @@ const ItemList = () => {
           
             {books.map((libros) => {
          return (
-            <div className='itemList-container' key={libros.id}>
-                <Link to= {`/detail/${libros.id}`}>
+            <div className='itemList' key={libros.id}>
+                <NavLink to={`/books/${libros.id}`}>                
                      <Item libro={libros} />
-                </Link>
+                </NavLink>
             </div>
           )
                     }

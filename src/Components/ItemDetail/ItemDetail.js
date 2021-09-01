@@ -1,27 +1,28 @@
-import {Card, Image} from 'semantic-ui-react'
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
-import {Button} from 'react-bootstrap'
-
+import { Card, Image } from 'semantic-ui-react';
+import ItemCount from '../ItemCount/ItemCount';
+import './ItemDetail.css'
 
 const ItemDetail = ({data}) => {
-    return(        
-                <Card >
-                        <Image src={data.imagen} wrapped ui={false} />
-                         <Card.Content>
-                                <Card.Header><h3>Nombre del libro:{data.nombre}</h3></Card.Header>
-                                <Card.Meta>
-                                <h4> Autor : {data.autor}</h4>
-                                </Card.Meta>
-                                 <Card.Description><h4>Descripción: {data.descripcion}</h4></Card.Description>
-                        </Card.Content>
-                        <ItemCount stockLibro={data.stock}/>
-                         <Card.Content extra><h5>${data.precio}</h5></Card.Content>
-                        <Button >Comprar</Button>
-                </Card>
-        
-    ) 
-            }
-            
+	console.log(data)
+    return (
+		<div className='cardInfo'>
+			<Card>
+				<Image src={data.imagen} wrapped ui={false} />
+				<Card.Content>
+					<Card.Header>{data.nombre}</Card.Header>
+					<Card.Meta>
+						<span>{data.autor}</span>
+					</Card.Meta>
+					<Card.Description>Sinopsis: {data.descripcion}</Card.Description>
+					<Card.Description>Precio: ${data.precio}</Card.Description>
+				</Card.Content>
+			</Card>
+			<ItemCount data={data.stock}/>
+			
+			
+		</div>
+    )
+}
 
 export default ItemDetail

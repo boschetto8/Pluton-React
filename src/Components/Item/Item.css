@@ -1,14 +1,17 @@
 .cardView {
-  display: inline-flex;
-  width: 40%;
-  margin: 5px;
+  display: flex;
   flex-direction: row;
-  padding: 2px;
-  flex-grow: 0;
-  justify-content: flex-start;
-  align-items: flex-start;
+  height: auto;
+  width: auto;
 }
 
-h5 {
-  color: black;
+.imagenPortada {
+  display: flex;
+  height: 300px;
+  width: auto;
+}
+
+.separador {
+  padding: 10px;
+  margin-bottom: 15px;
 }

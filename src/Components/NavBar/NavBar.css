@@ -1,4 +1,39 @@
-.carritoNavBar {
+.navCont {
   display: flex;
-  flex-direction: row-reverse;
+  background-color: black;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.itemNavegacion {
+  display: flex;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.textLibreria {
+  display: flex;
+  padding-right: 5px;
+  margin-top: px;
+}
+
+.carrito {
+  display: flex;
+  justify-items: flex-end;
+  align-self: center;
+}
+
+h3,
+h4 {
+  color: white;
 }

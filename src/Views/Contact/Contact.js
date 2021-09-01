@@ -1,9 +1,10 @@
 import React from 'react'
-import './Contact.css'
+import Category from '../Category/Category'
+
 const Contact = () => {
     return (
-        <div className = 'contacto'>
-            <h1>Contacto</h1>
+        <div className='contacto'>
+            <Category/>
         </div>
     )
 }

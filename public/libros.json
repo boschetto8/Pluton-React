@@ -1,4 +1,7 @@
- [
+{
+
+"books":
+    [
         {   "id":1, 
             "nombre": "Mi planta de naranja lima", 
             "autor":"jose mauro de vasconcelos", 
@@ -6,7 +9,7 @@
             "stock": 14,
             "categoria": "ficcion",
             "descripcion":"Este libro describe como un niño a través de sus experiencias va asumiendo las consecuencias de su vida",
-            "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/029/689/products/naranja-lima1-e53d051f21d1a2af0416002664688088-640-0.png"
+            "imagen": "https://pictures.abebooks.com/inventory/5000130455.jpg"
         },
         {   "id":2, 
             "nombre": "El principito", 
@@ -15,7 +18,7 @@
             "stock":  7,
             "categoria": "ficcion",
             "descripcion":"El principito trata de la historia de un pequeño príncipe que parte de su asteroide a una travesía por el universo, en la cual descubre la extraña forma en que los adultos ven la vida y comprende el valor del amor y la amistad.",
-            "imagen": "https://imagessl4.casadellibro.com/a/l/t7/94/9788478887194.jpg"
+            "imagen": "https://www.eluniverso.com/resizer/Kj7ls5K0wQCBel_l37Z59Hvx3s8=/432x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/4RDSC2OSSVDITEJ3XK24EXSE5M.jpg"
         },
         {   "id":3, 
             "nombre": "Los hermanos Karamazov", 
@@ -33,16 +36,16 @@
             "stock":  2, 
             "categoria": "drama",
             "descripcion":"Es la historia de cinco profesores universitarios críticos de la obra del desconocido y misterioso escritor alemán Benno Von Archimboldi, del que no sabe nada ni su editor, solo que es un hombre muy alto. ... En esta búsqueda entran historias y personajes que los llevan a México, a Santa Teresa, a buscar al escritor",
-            "imagen": "https://1.bp.blogspot.com/-0RFs6WeNku4/V7zRiNRbzxI/AAAAAAAAAo0/WIxB2tvwHmEThgk1vqS968oW6B84IiyAACLcB/s1600/2666.jpg"
+            "imagen": "https://m.media-amazon.com/images/I/51ZqJ1yiMBL.jpg"
         },
         {   "id":5, 
             "nombre": "La invención de Morel", 
             "autor":"Adolfo Bioy Casares", 
             "precio": 750,
-            "stock": 120, 
+            "stock": 12, 
             "categoria": "ficcion",
             "descripcion":"El escritor argentino Adolfo Bioy Casares, se plantea el tema del eterno regreso y se despliega una discusión sobre la percepción del hombre, al ubicarse en el mundo del que forma parte.",
-            "imagen": "https://www.planetadelibros.com/usuaris/libros/fotos/49/m_libros/portada_la-invencion-de-morel_adolfo-bioy-casares_201505261221.jpg"
+            "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/63/La_invenci%C3%B3n_de_Morel.JPG"
         },
         {   "id":6, 
             "nombre": "Bodas de Sangre", 
@@ -51,6 +54,9 @@
             "stock":  5, 
             "categoria": "teatro",
             "descripcion":"El tema principal tratado en este gran drama es la vida y la muerte. ... Es constante en la obra lorquiana la obsesión por el puñal, el cuchillo y la navaja, que en Bodas de sangre atraen la fascinación y, a la vez, presagian la muerte.",
-            "imagen": "https://i.pinimg.com/originals/c7/53/17/c75317368a827d4e85bd5f36b0228d77.jpg"
-        }
+            "imagen": "https://www.normainfantilyjuvenil.com/co/uploads/2019/01/9580469911.jpg"
+        }   
     ]
+}
+
+

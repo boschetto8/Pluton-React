@@ -1,5 +1,4 @@
-.itemList-container {
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
+.itemList {
+  display: inline-flex;
+  background-color: gray;
 }

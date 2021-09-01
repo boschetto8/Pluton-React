@@ -1,6 +1,6 @@
-.itemDetailContainer {
-  background-color: gray;
-}
-.prueba {
-  color: black;
+.detailContainer {
+  display: flex;
+  justify-content: center;
+
+  background-color: grey;
 }

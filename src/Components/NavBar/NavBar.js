@@ -1,34 +1,33 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar,  Nav, Container } from 'react-bootstrap'
-import CartWidget from '../CartWidget/CartWidget'
-import ShoppingCart from '../ShoppingCart/ShoppingCart'
+import { NavLink } from 'react-router-dom'
+import { BookWidget, CartWidget } from '../Widget/Widget'
+import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <div>
-            <Navbar bg="dark" variant="dark">                
-                    <Container>
-                        <Navbar.Brand href="/">Escape a Plutón <CartWidget/></Navbar.Brand>
-                            <Nav className="me-auto">
-                            <Nav.Link href="/">Inicio</Nav.Link>
-                            <Nav.Link href="/contact">Contacto</Nav.Link>
-                            <Nav.Link href="/about">Nosotros</Nav.Link>                
-                            
-                        </Nav>
-                    </Container>   
-                         <ShoppingCart />
-                         
-                               
+        <div className='navCont'>
+            <div className='navegacion'>
                 
-                 
+                    <NavLink to='/' className='itemNavegacion'>
+                        <div className='logo'>
+                        
+                        <h3 className='textLibreria'><BookWidget className='bookWidget'/> Librería Plutón</h3>        
+                                          
+                        </div>               
+                    </NavLink>
+                    <NavLink to='/' className='itemNavegacion'><h4>Inicio</h4></NavLink>
+                    <NavLink to='/contact' className='itemNavegacion'><h4>Contacto</h4></NavLink>                    
+                    <NavLink to='/about' className='itemNavegacion'><h4>Nosotros</h4></NavLink>
                 
-            </Navbar>
+            </div>
+            <div className='carrito'>
+                    <CartWidget/> 
+            </div>       
+            
+            
                      
         </div>
     )
 }
 
 export default NavBar
-
-

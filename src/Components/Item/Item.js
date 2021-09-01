@@ -8,13 +8,13 @@ const Item = ({libro}) => {
   console.log(libro)
 
   return (
-     <div className='cardView'>
-            <Card>
-                  <Image src={libro.imagen} />
+        <div className='separador'>
+            <Card  className='cardView'>
+                  <Image src={libro.imagen} className='imagenPortada'/>
                   <Card.Content>
                      <Card.Header>{libro.nombre}</Card.Header>                     
                   </Card.Content>
-                     <Card.Content extra><h5>${libro.precio}</h5></Card.Content>
+                     <Card.Content extra><h5><strong>${libro.precio}</strong></h5></Card.Content>
                      
                      
             </Card>
