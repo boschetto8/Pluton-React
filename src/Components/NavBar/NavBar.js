@@ -21,7 +21,7 @@ const NavBar = () => {
                 
             </div>
             <div className='carrito'>
-                    <CartWidget/> 
+                    <NavLink to='/cart'><CartWidget/> </NavLink>
             </div>       
             
             

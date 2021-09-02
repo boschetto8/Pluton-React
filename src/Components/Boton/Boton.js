@@ -3,13 +3,12 @@ import { Button } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom'
 
 const Boton = () => {
-
-const agregarCarrito = ({count}) => {
+    const [carrito, setCarrito] = useState([]);
     
+const agregarCarrito = ({data}) => {
+    setCarrito(data)
+    console.log(carrito)
 
-
-
-    
 }
     return (
         <div>

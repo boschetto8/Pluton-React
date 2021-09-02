@@ -1,14 +1,13 @@
 import React from 'react'
 
-const CategoryDetail = ({data}) => {
-    let ficcionCat = data.filter (categoria => categoria === 'ficcion')
-    console.log(ficcionCat)
+const CategoryDetail = () => {
+    
     return (
 
         <div>
             
             
-            
+        
         </div>
     )
 }

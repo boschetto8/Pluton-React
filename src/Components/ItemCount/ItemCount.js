@@ -1,5 +1,6 @@
 import {useEffect, useState } from 'react';
 import {Button} from '@material-ui/core'
+import Boton from '../Boton/Boton';
 
 const ItemCount = ({data}) => {
     const [counter, setCounter] = useState(0)
@@ -14,7 +15,7 @@ const ItemCount = ({data}) => {
         }
     
     const decrementar = () => {
-        if(counter > 0 && stock <= 20){
+        if(counter > 0){
         setCounter(counter-1)
         setStock (stock+1)
                     }
@@ -33,6 +34,7 @@ const ItemCount = ({data}) => {
             <Button variant="outlined" color="secondary" onClick={decrementar}> - </Button>
             <div>
                 <h5>Stock disponible {data-counter}</h5>
+                <Boton count ={counter}/>
             </div>
         </div>
     )

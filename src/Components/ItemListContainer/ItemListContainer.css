@@ -1,4 +1,5 @@
 .itemListContainer {
   display: flex;
   background-color: gray;
+  flex-direction: column;
 }
