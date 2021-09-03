@@ -1,9 +1,13 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react';
 import ItemCount from '../ItemCount/ItemCount';
-import './ItemDetail.css'
+import './ItemDetail.css';
+import {  UseCartContext } from '../CartContext/CartContext';
 
 const ItemDetail = ({data}) => {
+	const estado = UseCartContext()
+	console.log(estado)
+      
 	console.log(data)
     return (
 		<div className='cardInfo'>

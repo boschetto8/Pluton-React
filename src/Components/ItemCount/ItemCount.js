@@ -2,6 +2,8 @@ import {useEffect, useState } from 'react';
 import {Button} from '@material-ui/core'
 import Boton from '../Boton/Boton';
 
+
+
 const ItemCount = ({data}) => {
     const [counter, setCounter] = useState(0)
     const [stock, setStock] = useState([])

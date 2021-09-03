@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header/Header'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar';
-// import { cartProvider } from './Components/CartContext/CartContext';
+import {  CartProvider } from './Components/CartContext/CartContext';
 //Views
 import Home from './Views/Home/Home';
 import Contact from './Views/Contact/Contact';
@@ -15,7 +15,7 @@ import Cart from './Views/Cart/Cart';
 
 const App = () => {
   return (
- // <cartProvider>
+  <CartProvider>
     <Router>
       <div className="App">
         <NavBar />
@@ -31,7 +31,7 @@ const App = () => {
           </Switch>  
         </div>
     </Router>
- // </cartProvider>
+   </CartProvider>
   );
 }
 
