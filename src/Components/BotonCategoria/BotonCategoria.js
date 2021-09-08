@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'semantic-ui-react'
 
+
 const BotonCategoria = ({cat}) => {
-  console.log(cat)
+  const [catLibro, setCatLibro] = useState([]);
+
+  useEffect(() => {
+      setCatLibro(cat)
+     
+  }, [cat])
+  
+    console.log(catLibro)
    const  handleCategory = () => {
       
    }

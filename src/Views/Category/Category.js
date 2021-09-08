@@ -22,19 +22,11 @@ const Category = ({books}) => {
    console.log('exi',existencialista)
         
   
-   return (
-            
-           <div className='category' >   
-           
-               <BotonCategoria cat={categoria}/> 
-                
+   return (            
+           <div className='category' >              
+               <BotonCategoria cat={categoria}/>                 
             </div>            
          )             
-
-
-
-
-
 }
    
 
